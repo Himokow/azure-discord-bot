@@ -50,5 +50,5 @@ app.get('/', function(req, res) {
     console.log('alive');
     res.send('alive');
 })
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log('running on' + 3000)
