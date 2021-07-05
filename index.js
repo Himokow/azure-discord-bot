@@ -43,7 +43,9 @@ app.use(cors());
 
 app.post('/', function(req, res) {
     console.log(req.body)
-    hook.send(req.body.message.markdown + '\r\n' + 'Visit : aaaa')
+    if(req.body.message.text.includes('To review')){
+        hook.send(req.body.message.markdown + '\r\n' + 'Visit : aaaa')
+    }
     res.send();
 })
 
