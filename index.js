@@ -43,7 +43,7 @@ app.use(cors());
 
 app.post('/', function(req, res) {
     console.log(req.body)
-    hook.send('@Himoko')
+    hook.send(req.body.message.markdown + '\r\n' + 'Visit : aaaa')
     res.send();
 })
 
