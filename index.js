@@ -42,9 +42,9 @@ app.use(bodyParser.json({ limit: '60mb' }));
 app.use(cors());
 
 app.post('/', function(req, res) {
-    console.log('coucou')
+    console.log(req)
     hook.send('@Himoko')
-    res.send(req);
+    res.send();
 })
 
 app.get('/', function(req, res) {
