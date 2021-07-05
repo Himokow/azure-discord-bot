@@ -44,6 +44,7 @@ app.use(cors());
 app.post('/', function(req, res) {
     console.log('coucou')
     hook.send('@Himoko')
+    res.send(req);
 })
 
 app.get('/', function(req, res) {
