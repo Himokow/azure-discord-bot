@@ -8,12 +8,12 @@ const app = express();
 const Discord = require('discord.js'),
     client = new Discord.Client({
         fetchAllMembers: true
-    }),
-    config = require('./config.json')
-    fs = require('fs')
+    })
+    // config = require('./config.json')
+    // fs = require('fs')
 
-client.login(config.token)
-client.commands = new Discord.Collection()
+// client.login(config.token)
+// client.commands = new Discord.Collection()
 
 const hook = new Discord.WebhookClient('861550710772465665', 'y66cfGImzK9LGk9_t99SJND2lOrX9BbhrjY-T0_FcGh8a-GaiS4k60wlbHN2l2sQyvSE');
 
